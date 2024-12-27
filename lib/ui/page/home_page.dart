@@ -7,7 +7,12 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Scaffold(
       body: SafeArea(
-        child: Placeholder(),
+        child: CustomScrollView(
+          slivers: [
+            SliverAppBar(),
+            
+          ],
+        ),
       ),
     );
   }
